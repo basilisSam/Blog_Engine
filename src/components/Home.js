@@ -1,13 +1,18 @@
-import React from "react";
-import Cards from "./Cards";
+import BlogList from "./BlogList";
+import useFetch from "./useFetch";
 
 const Home = () => {
+  const {
+    data: blogs,
+    isPending,
+    error,
+  } = useFetch("http://localhost:8000/blogs");
+
   return (
-    <div>
-      <h1 className='container-fluid d-flex justify-content-center'>
-        Welcome to our website!
-      </h1>
-      <Cards />
+    <div className='home'>
+      {error && <div>{error}</div>}
+      {isPending && <div>Loading...</div>}
+      <BlogList blogs={blogs} title='Blog PostS' />
     </div>
   );
 };
