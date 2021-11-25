@@ -1,4 +1,4 @@
-# BulletinBoard 
+# Blog_Engine 
 
 The front end of the Blog_Engine application. A functional Blog app that you can create/delete Posts.
 
