@@ -27,6 +27,6 @@ The project is build with [React](https://reactjs.org/). It uses [styled compone
 
 #### Build
 
-You can build the application in production mode with `yarn build`
+You can build the application in production mode with `npm build`
 
 > **Note:** You can use `npm` instead of `yarn`
